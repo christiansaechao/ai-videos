@@ -76,3 +76,11 @@ pipeline. 30 blocks × 10 seconds = exactly 5:00. Each block ≈ 20–24 words
 - Voiceover: Seed Audio, preset voice "Leo", one take per block
 - Cost: ~1,080 credits (35/clip video + 0.6/take audio + style key)
 - To get 1080p: top up credits and upscale job 38b31de0 (upscale_video, bytedance provider, source 1280x720 -> 1080p), or re-render clips at mode=std resolution=1080p (90 credits/clip)
+
+## RE-VOICE v2 — KEVIN (2026-07-04)
+
+- Final video v2, Kevin narration (5:00, 1280x720): https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl/hf_20260704_044405_5496ee62-b67e-480f-8347-7421da6fe6f0.mp4
+- Assembly job: 5496ee62-b67e-480f-8347-7421da6fe6f0
+- Voice: Seed Audio preset "Kevin" (f1373f24-3b96-433f-9a68-e595810ef608); blocks 6, 10, 26 regenerated at speech_rate 15 to fit the 10s windows
+- Same 30 Seedance video clips as v1; re-voice + reassembly cost ~20 credits
+- v1 (Leo narration) remains available: job 38b31de0-c717-4f6b-926b-7f51c4a805ec
