@@ -84,3 +84,16 @@ pipeline. 30 blocks × 10 seconds = exactly 5:00. Each block ≈ 20–24 words
 - Voice: Seed Audio preset "Kevin" (f1373f24-3b96-433f-9a68-e595810ef608); blocks 6, 10, 26 regenerated at speech_rate 15 to fit the 10s windows
 - Same 30 Seedance video clips as v1; re-voice + reassembly cost ~20 credits
 - v1 (Leo narration) remains available: job 38b31de0-c717-4f6b-926b-7f51c4a805ec
+
+## SHORTS — 3 × 20s vertical (2026-07-04)
+
+Model: Kling 3.0 Turbo (720p, 9:16, 10s blocks), Kevin VO, burned anton captions. Total ~94.5 credits.
+
+1. "The $200 Bucket" — hook: bucket kit -> cash fan; math: $15 supplies, 90% margins
+   https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl/hf_20260704_050042_8984f10f-fab2-48a8-905a-518575d17f5a.mp4
+2. "The Upsell That Prints Money" — ceramic coating $60 -> $1,500; headlights + pet hair add-ons
+   https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl/hf_20260704_050045_bcf599c5-5aee-4644-aaf8-29d7778a9364.mp4
+3. "Stop Selling Washes, Sell Subscriptions" — $89/mo x 30 clients = $2,670 recurring
+   https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl/hf_20260704_050047_821f0105-51fd-4209-9dfb-bc5291de844b.mp4
+
+Assembly jobs: 8984f10f / bcf599c5 / 821f0105. Clip + VO job ids in session production state.
