@@ -65,3 +65,14 @@ pipeline. 30 blocks × 10 seconds = exactly 5:00. Each block ≈ 20–24 words
 **Block 29** — So: two hundred bucks to start, ninety percent margins, customers on every street, and a clear path to real recurring income.
 
 **Block 30** — What does a full detail cost in your city? Drop the price in the comments, subscribe, and stay on the bright side of the hustle.
+
+---
+
+## PRODUCTION RESULT (2026-07-04)
+
+- Final video (5:00, 1280x720, 30 blocks): https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl/hf_20260704_041813_38b31de0-c717-4f6b-926b-7f51c4a805ec.mp4
+- Assembly job: 38b31de0-c717-4f6b-926b-7f51c4a805ec (Higgsfield explainer_video)
+- Clips: Seedance 2.0 fast, 30 x 10s, 720p 16:9, style key image 621f870a-b9cf-4d4c-a26e-fcd50f0db6fe
+- Voiceover: Seed Audio, preset voice "Leo", one take per block
+- Cost: ~1,080 credits (35/clip video + 0.6/take audio + style key)
+- To get 1080p: top up credits and upscale job 38b31de0 (upscale_video, bytedance provider, source 1280x720 -> 1080p), or re-render clips at mode=std resolution=1080p (90 credits/clip)
