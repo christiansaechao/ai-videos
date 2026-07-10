@@ -37,7 +37,22 @@ never change the shirt color between clips of the same video.)
 
 **NEGATIVE BLOCK (paste into the negative/avoid field every time):**
 > glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra
-> fingers, warped hands, legible text, readable logos, jittery eyes, frozen lips
+> fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand
+> logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand
+> mark
+
+### Rule 4 — never name "logo" or "branding" inside the main prompt, even to ban it
+
+Video models weight tokens by presence, not by the negation logic wrapped around them —
+"do not show any logo" still puts "logo" in the model's attention, and since it has no
+real badge to draw from it invents one (this is exactly where the fake car-brand logos
+come from). **The fix is compositional, not verbal:** never mention logo/branding in the
+main descriptive prompt at all; only ever exclude it in the dedicated negative-prompt
+field (already folded into the NEGATIVE BLOCK above). And for vehicle shots specifically,
+frame the crop so the badge-prone zones — front grille, hood ornament, rear trunk lid,
+fender trim badges — are physically outside the frame, rather than asking the model to
+suppress what's there. That's why the vehicle prompts below say things like "cropped
+tight so the grille and badge are out of frame" instead of "no logo visible."
 
 ### Rule 2 — Anchor every clip with a start frame (your UI supports this — use it always)
 
@@ -82,10 +97,10 @@ Recurring anchors: the black SUV, the white van, the grade block.
 
 | # | Beat | Start-frame image prompt | 5s motion prompt (paste blocks too) | Overlay (CapCut) |
 |---|---|---|---|---|
-| 1 | HOOK — foam | close-up of a very dirty black SUV hood covered in pollen and dust, in [WORLD], [GRADE] | thick white foam sprays across the dirty black SUV hood from a foam cannon held by gloved hands at frame edge, foam rolling down the paint, [GRADE], [NEGATIVE] | `day 47 of my mobile detailing side hustle` |
-| 2 | Peel line | black SUV side panel half covered in dripping foam, [WORLD], [GRADE] | a pressure washer jet cuts a clean line through the foam on the black SUV panel, dirt and suds sheeting off, [GRADE], [NEGATIVE] | `job 1 of 3 today` |
+| 1 | HOOK — foam | close-up on the hood surface of a dirty black SUV, light layer of pollen and dust on the paint, cropped tight so the front grille and badge are out of frame, in [WORLD], [GRADE] | thick white foam sprays across the hood surface from a foam cannon held by gloved hands at frame edge, foam rolling down the paint, camera stays cropped above the grille line, [GRADE], [NEGATIVE] | `day 47 of my mobile detailing side hustle` |
+| 2 | Peel line | close-up on a black SUV rear door panel half covered in dripping foam, cropped so no fender trim or badges are in frame, [WORLD], [GRADE] | a pressure washer jet cuts a clean line through the foam on the door panel, dirt and suds sheeting off, framing stays on plain body panel only, [GRADE], [NEGATIVE] | `job 1 of 3 today` |
 | 3 | Interior pull | close-up of a beige fabric car seat with visible dirt stains, car interior, soft daylight through windows, [GRADE] | gloved hand pulls a carpet extractor nozzle slowly across the stained beige car seat leaving a visibly cleaner stripe, [GRADE], [NEGATIVE] | `this seat took 20 minutes` |
-| 4 | Towel reveal | gleaming wet black SUV paint reflecting clouds, gloved hand holding a gray microfiber towel resting on the hood, [WORLD], [GRADE] | gloved hand wipes the gray microfiber towel across gleaming black paint in one smooth arc revealing a mirror finish, [GRADE], [NEGATIVE] | `client watched the whole time` |
+| 4 | Towel reveal | gleaming wet black SUV roof and rear quarter panel reflecting clouds, gloved hand holding a gray microfiber towel resting on the paint, cropped away from the front grille and rear badge area, [WORLD], [GRADE] | gloved hand wipes the gray microfiber towel across the gleaming black paint in one smooth arc revealing a mirror finish, camera stays on roof/quarter panel only, [GRADE], [NEGATIVE] | `client watched the whole time` |
 | 5 | **REAL SCREEN RECORDING** — Quick Charge: tap preset → charge → receipt sent. 3s max. | — | — | `he paid before I left the driveway` |
 | 6 | Pack-up | rear of [WORLD] van, open doors, plastic bins of detailing supplies inside, [GRADE] | hands slide a bin of detailing supplies into the van and swing one rear door shut, [GRADE], [NEGATIVE] | `$610 by 2pm` |
 | 7 | Loop end | dirty dark-blue sedan parked in a different driveway, seen through a van windshield, [GRADE] | slow handheld push toward the windshield view of the dirty dark-blue sedan waiting in the next driveway, [GRADE], [NEGATIVE] | `job 2. day 47 continues` |
@@ -96,6 +111,13 @@ on screen: caption `the app in clip 5 does the invoicing too 🧾 (bio)`.
 
 **Variants (same start frames, new motion prompts):** swap SUV→truck bed rinse, seat→floor
 mat, driveway→apartment lot. Each variant ≈ 20 minutes of generation. Ship 3/week.
+
+**Vehicle-framing rule for every clip below (Scripts 2 and 3 too):** any shot involving a
+car — even a wide shot, not just close-ups — should specify which panel or angle the
+camera holds on (door, roof, quarter panel, mirror, seat, dashboard) rather than "the car"
+generically. A vague "sedan" or "SUV" with no framing instruction gives the model room to
+drift toward a front 3/4 view, which is exactly the grille/badge zone that hallucinates
+fake logos. Where a row below doesn't already specify a panel, add one before generating.
 
 ---
 
