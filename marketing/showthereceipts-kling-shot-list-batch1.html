@@ -1,0 +1,761 @@
+<!-- Source for artifact: https://claude.ai/code/artifact/a388ad1e-a6f9-4fe5-b642-625b7b177608 -->
+<title>ShowTheReceipts — Kling Shot List</title>
+<style>
+  :root {
+    --page:        #f3f1ec;
+    --surface:     #fcfbf8;
+    --surface-2:   #ffffff;
+    --code-bg:     #f7f5f0;
+    --ink:         #17140f;
+    --ink-2:       #55503f;
+    --muted:       #8c8672;
+    --grid:        #e3dfd3;
+    --ring:        rgba(23,20,15,0.12);
+    --accent:      #c22a1f;
+    --accent-ink:  #ffffff;
+    --accent-soft: #f6ded9;
+    --good:        #1f7a45;
+    --good-soft:   #dcefe2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page:        #0b0c0a;
+      --surface:     #161712;
+      --surface-2:   #1d1e18;
+      --code-bg:     #121310;
+      --ink:         #f3f1e9;
+      --ink-2:       #c2bca7;
+      --muted:       #85806e;
+      --grid:        #2c2c24;
+      --ring:        rgba(243,241,233,0.10);
+      --accent:      #ff6a52;
+      --accent-ink:  #1a0e0a;
+      --accent-soft: #3a1c15;
+      --good:        #4fd88a;
+      --good-soft:   #123322;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page: #0b0c0a; --surface: #161712; --surface-2: #1d1e18; --code-bg: #121310;
+    --ink: #f3f1e9; --ink-2: #c2bca7; --muted: #85806e; --grid: #2c2c24; --ring: rgba(243,241,233,0.10);
+    --accent: #ff6a52; --accent-ink: #1a0e0a; --accent-soft: #3a1c15; --good: #4fd88a; --good-soft: #123322;
+  }
+  :root[data-theme="light"] {
+    --page: #f3f1ec; --surface: #fcfbf8; --surface-2: #ffffff; --code-bg: #f7f5f0;
+    --ink: #17140f; --ink-2: #55503f; --muted: #8c8672; --grid: #e3dfd3; --ring: rgba(23,20,15,0.12);
+    --accent: #c22a1f; --accent-ink: #ffffff; --accent-soft: #f6ded9; --good: #1f7a45; --good-soft: #dcefe2;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    margin: 0; line-height: 1.5;
+  }
+  .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 20px 120px; }
+
+  /* ---------- header ---------- */
+  header { padding: 44px 0 22px; }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  h1 {
+    font-size: clamp(26px, 4.6vw, 36px); line-height: 1.1; margin: 10px 0 10px;
+    letter-spacing: -0.015em; font-weight: 800; text-wrap: balance;
+  }
+  header p { color: var(--ink-2); font-size: 15px; max-width: 62ch; margin: 0 0 4px; }
+  header .note {
+    margin-top: 14px; font-size: 13px; color: var(--muted);
+    border-left: 3px solid var(--accent); padding: 8px 0 8px 12px;
+  }
+
+  /* ---------- sticky settings + nav ---------- */
+  .stickybar {
+    position: sticky; top: 0; z-index: 20; background: var(--page);
+    border-bottom: 1px solid var(--grid); padding: 12px 0; margin-bottom: 34px;
+  }
+  .stickybar-inner { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .setting-chip {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11.5px; letter-spacing: 0.02em; padding: 5px 10px; border-radius: 5px;
+    background: var(--surface-2); border: 1px solid var(--ring); color: var(--ink);
+    white-space: nowrap;
+  }
+  .setting-chip b { color: var(--accent); }
+  .navlinks { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+  .navlinks a {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11.5px; color: var(--ink-2); text-decoration: none; padding: 5px 9px;
+    border-radius: 5px; border: 1px solid transparent;
+  }
+  .navlinks a:hover, .navlinks a:focus-visible { border-color: var(--ring); color: var(--ink); }
+
+  /* ---------- section headers ---------- */
+  .script-head { margin: 64px 0 6px; padding-top: 8px; scroll-margin-top: 76px; }
+  .script-head .num {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: 0.06em;
+  }
+  .script-head h2 { font-size: 23px; margin: 4px 0 6px; font-weight: 800; letter-spacing: -0.01em; }
+  .script-head p { color: var(--ink-2); font-size: 14px; margin: 0; max-width: 66ch; }
+  .script-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+  .script-meta b { color: var(--ink); }
+
+  h3.subhead {
+    font-size: 14.5px; font-weight: 700; margin: 30px 0 12px; color: var(--ink);
+    display: flex; align-items: center; gap: 8px;
+  }
+
+  /* ---------- global block cards (Step 0 style) ---------- */
+  .anchor-card {
+    background: var(--surface); border: 1px solid var(--ring); border-radius: 8px;
+    padding: 18px 20px; margin: 14px 0;
+  }
+  .anchor-card .at { font-size: 14px; font-weight: 700; margin: 0 0 8px; }
+
+  /* ---------- clip card ---------- */
+  .clip {
+    background: var(--surface); border: 1px solid var(--ring); border-radius: 9px;
+    padding: 18px 20px 20px; margin: 16px 0;
+  }
+  .clip-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .clip-num {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 12.5px;
+    padding: 2px 8px; border-radius: 4px; letter-spacing: 0.02em;
+  }
+  .clip-title { font-size: 16px; font-weight: 750; }
+  .clip-badges { margin-left: auto; display: flex; gap: 6px; }
+  .tag {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase;
+    padding: 3px 8px; border-radius: 99px; border: 1px solid var(--ring); color: var(--ink-2);
+  }
+  .tag.rec { background: var(--good-soft); border-color: transparent; color: var(--good); }
+
+  .block { margin-top: 14px; }
+  .block-label {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    margin-bottom: 6px;
+  }
+  .block-label span {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700;
+  }
+  .copy-btn {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase;
+    background: var(--surface-2); border: 1px solid var(--ring); color: var(--ink-2);
+    padding: 4px 9px; border-radius: 5px; cursor: pointer; font-weight: 700;
+  }
+  .copy-btn:hover { color: var(--ink); border-color: var(--accent); }
+  .copy-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .copy-btn.copied { background: var(--good-soft); color: var(--good); border-color: transparent; }
+  pre.code {
+    margin: 0; padding: 12px 14px; background: var(--code-bg); border: 1px solid var(--grid);
+    border-radius: 6px; font-size: 13px; line-height: 1.6; color: var(--ink);
+    white-space: pre-wrap; word-break: break-word;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  .irl-box {
+    margin-top: 14px; padding: 12px 14px; background: var(--good-soft); border-radius: 6px;
+    border: 1px solid transparent;
+  }
+  .irl-box .il { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--good); font-weight: 700; margin-bottom: 5px; }
+  .irl-box p { margin: 0; font-size: 13.5px; color: var(--ink); line-height: 1.55; }
+
+  .vo-box {
+    margin-top: 14px; padding: 12px 14px; background: var(--surface-2); border: 1px dashed var(--ring); border-radius: 6px;
+  }
+  .vo-box .vl { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 5px; }
+  .vo-box p { margin: 0; font-size: 14px; font-style: italic; color: var(--ink); }
+
+  .foot-row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; align-items: center; }
+  .foot-item { font-size: 12.5px; color: var(--ink-2); display: flex; gap: 5px; align-items: center; }
+  .foot-item b { color: var(--ink); font-weight: 700; }
+  .overlay-pill {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px; background: var(--surface-2); border: 1px solid var(--ring);
+    padding: 4px 10px; border-radius: 5px; color: var(--ink);
+  }
+
+  /* ---------- checklist / footer sections ---------- */
+  .steps { padding-left: 0; list-style: none; margin: 14px 0; }
+  .steps li {
+    display: flex; gap: 10px; font-size: 14px; color: var(--ink-2); margin-bottom: 8px; padding-left: 0;
+  }
+  .steps li::before {
+    content: attr(data-n); flex: none; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--surface-2); border: 1px solid var(--ring); color: var(--ink);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .divider { border: none; border-top: 1px solid var(--grid); margin: 56px 0; }
+
+  a { color: var(--accent); }
+  ::selection { background: var(--accent-soft); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Production reference · self-contained</div>
+    <h1>Kling Shot List — Batch 1</h1>
+    <p>Every prompt below is fully expanded — copy the block, paste it, generate. No
+    placeholders, no flipping back to another doc. Character, world, lighting, and negative
+    prompt are spelled out in full inside every single card.</p>
+    <div class="note">Fix baked in throughout: badge-prone zones (grille, hood ornament, trunk
+    badge) are framed out of every vehicle shot by composition, not by naming "logo" in the
+    prompt — naming it to ban it still primes the model to render one.</div>
+  </header>
+
+  <div class="stickybar">
+    <div class="stickybar-inner">
+      <span class="setting-chip">MODEL <b>Kling 3.0</b></span>
+      <span class="setting-chip">DURATION <b>5s</b> per gen</span>
+      <span class="setting-chip">ASPECT <b>9:16</b> portrait</span>
+      <span class="setting-chip">RES <b>720p+</b></span>
+      <span class="setting-chip">ENHANCE <b>on</b></span>
+      <span class="setting-chip">MULTI-SHOT <b>off</b></span>
+      <nav class="navlinks">
+        <a href="#anchors">Anchors</a>
+        <a href="#script-1">Script 1</a>
+        <a href="#script-2">Script 2</a>
+        <a href="#script-3">Script 3</a>
+        <a href="#assembly">Assembly</a>
+      </nav>
+    </div>
+  </div>
+
+  <section id="anchors">
+    <h3 class="subhead">Global reference (for edits later — every clip below already includes these in full)</h3>
+    <div class="anchor-card">
+      <p class="at">Character — "M," the operator</p>
+      <pre class="code">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, black work pants, and black low-top sneakers</pre>
+    </div>
+    <div class="anchor-card">
+      <p class="at">World — vehicle + location vocabulary</p>
+      <pre class="code">a plain white cargo van with its rear doors open, parked in a suburban concrete driveway, modest single-story house, quiet residential street</pre>
+    </div>
+    <div class="anchor-card">
+      <p class="at">Grade — the "same camera" illusion</p>
+      <pre class="code">vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="anchor-card">
+      <p class="at">Negative — paste into the negative/avoid field on every generation</p>
+      <pre class="code">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+  </section>
+
+  <!-- ============================================================ SCRIPT 1 -->
+  <hr class="divider" />
+  <div class="script-head" id="script-1">
+    <span class="num">SCRIPT 01</span>
+    <h2>"Day 47" — satisfying b-roll + text-overlay story</h2>
+    <p>No character face — hands and vehicle only, lowest consistency risk. Make this one first.</p>
+    <div class="script-meta"><span><b>7</b> generated clips</span><span><b>1</b> real screen recording</span><span><b>~22s</b> final runtime</span><span>no VO — trending audio + overlays only</span></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">01</span><span class="clip-title">Hook — foam hits the hood</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt (generate first)</span><button class="copy-btn" data-target="s1c1-img">Copy</button></div>
+      <pre class="code" id="s1c1-img">close-up on the hood surface of a dirty black SUV, light layer of pollen and dust on the paint, cropped tight so the front grille and badge are out of frame, parked in a suburban concrete driveway, modest single-story house, quiet residential street, vertical 9:16 smartphone photo, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c1-vid">Copy</button></div>
+      <pre class="code" id="s1c1-vid">thick white foam sprays across the hood surface from a foam cannon held by gloved hands at frame edge, foam rolling down the paint, camera stays cropped above the grille line, vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c1-neg">Copy</button></div>
+      <pre class="code" id="s1c1-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">day 47 of my mobile detailing side hustle</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">02</span><span class="clip-title">Peel line — pressure washer cuts through foam</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s1c2-img">Copy</button></div>
+      <pre class="code" id="s1c2-img">close-up on a black SUV rear door panel half covered in dripping white foam, cropped so no fender trim or badges are in frame, parked in a suburban concrete driveway, modest single-story house, quiet residential street, vertical 9:16 smartphone photo, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c2-vid">Copy</button></div>
+      <pre class="code" id="s1c2-vid">a pressure washer jet cuts a clean line through the foam on the door panel, dirt and suds sheeting off, framing stays on the plain body panel only, vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c2-neg">Copy</button></div>
+      <pre class="code" id="s1c2-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">job 1 of 3 today</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">03</span><span class="clip-title">Interior pull — carpet extractor</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s1c3-img">Copy</button></div>
+      <pre class="code" id="s1c3-img">close-up of a beige fabric car seat with visible dirt stains, car interior, soft daylight through the windows, vertical 9:16 smartphone photo, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c3-vid">Copy</button></div>
+      <pre class="code" id="s1c3-vid">gloved hand pulls a carpet extractor nozzle slowly across the stained beige car seat leaving a visibly cleaner stripe behind it, vertical 9:16 smartphone video, handheld with slight natural shake, soft daylight through the windows, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c3-neg">Copy</button></div>
+      <pre class="code" id="s1c3-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">this seat took 20 minutes</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">04</span><span class="clip-title">Towel reveal — mirror finish</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s1c4-img">Copy</button></div>
+      <pre class="code" id="s1c4-img">gleaming wet black SUV roof and rear quarter panel reflecting clouds, gloved hand holding a gray microfiber towel resting on the paint, cropped away from the front grille and rear badge area, parked in a suburban concrete driveway, vertical 9:16 smartphone photo, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c4-vid">Copy</button></div>
+      <pre class="code" id="s1c4-vid">gloved hand wipes the gray microfiber towel across the gleaming black paint in one smooth arc revealing a mirror finish, camera stays on the roof and quarter panel only, vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c4-neg">Copy</button></div>
+      <pre class="code" id="s1c4-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">client watched the whole time</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">05</span><span class="clip-title">Get paid — Quick Charge</span><div class="clip-badges"><span class="tag rec">real screen recording</span></div></div>
+    <div class="irl-box">
+      <div class="il">Not a Kling generation</div>
+      <p>Record your phone screen: open ShowTheReceipts → tap Quick Charge → tap the preset
+      service → tap charge → client pays → receipt sends. Portrait lock, full brightness,
+      notifications off. Keep it under 3 seconds in the final cut — speed the raw recording
+      up 1.2–1.5× in CapCut if the flow runs long.</p>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">he paid before I left the driveway</span></div>
+      <div class="foot-item">Max <b>3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">06</span><span class="clip-title">Pack-up — loading the van</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s1c6-img">Copy</button></div>
+      <pre class="code" id="s1c6-img">rear of a plain white cargo van with its doors open, plastic bins of detailing supplies stacked inside, parked in a suburban concrete driveway, vertical 9:16 smartphone photo, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c6-vid">Copy</button></div>
+      <pre class="code" id="s1c6-vid">gloved hands slide a bin of detailing supplies into the van and swing one rear door shut, vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c6-neg">Copy</button></div>
+      <pre class="code" id="s1c6-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">$610 by 2pm</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">07</span><span class="clip-title">Loop end — next driveway</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s1c7-img">Copy</button></div>
+      <pre class="code" id="s1c7-img">a dirty dark-blue sedan parked in a different driveway, seen through a van's windshield glass, quiet residential street, vertical 9:16 smartphone photo, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s1c7-vid">Copy</button></div>
+      <pre class="code" id="s1c7-vid">slow handheld push toward the windshield view of the dirty dark-blue sedan waiting in the next driveway, framed on the door and roof only with no grille or badge visible, vertical 9:16 smartphone video, handheld with slight natural shake, soft overcast morning daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s1c7-neg">Copy</button></div>
+      <pre class="code" id="s1c7-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">job 2. day 47 continues</span></div>
+      <div class="foot-item">Trim to <b>~3s</b> · loops back to clip 01's dirty-car visual</div>
+    </div>
+  </div>
+
+  <!-- ============================================================ SCRIPT 2 -->
+  <hr class="divider" />
+  <div class="script-head" id="script-2">
+    <span class="num">SCRIPT 02</span>
+    <h2>"5:45am" — day-in-the-life</h2>
+    <p>Character face appears throughout. Generate the portrait anchor once (Step 0 below),
+    then reuse the full character text in every prompt — it's already spelled out in full
+    in each clip card, so no need to hold the portrait in your head.</p>
+    <div class="script-meta"><span><b>8</b> generated clips</span><span><b>1</b> real screen recording</span><span><b>~28s</b> final runtime</span><span>light VO or none — timestamp overlays carry it</span></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">00</span><span class="clip-title">Character anchor — generate once before Script 2</span><div class="clip-badges"><span class="tag">still only</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Portrait still prompt</span><button class="copy-btn" data-target="s2c0-img">Copy</button></div>
+      <pre class="code" id="s2c0-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, black work pants, and black low-top sneakers, standing in a plain kitchen doorway, neutral relaxed expression facing camera, vertical 9:16 smartphone photo, soft warm indoor light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c0-neg">Copy</button></div>
+      <pre class="code" id="s2c0-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row"><div class="foot-item">Optional: if your Higgsfield UI has an image-edit / "same subject" mode, feed this portrait in as the reference for clips 02, 03, 04 and 08 below instead of generating from text alone — either path works since the full character description is already in every prompt.</div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">01</span><span class="clip-title">Hook — alarm</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt (no face needed — hand only)</span><button class="copy-btn" data-target="s2c1-img">Copy</button></div>
+      <pre class="code" id="s2c1-img">dark bedroom lit only by a phone screen glow on a nightstand, a digital clock reading 5:45 barely legible in the background blur, vertical 9:16 smartphone photo, low light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c1-vid">Copy</button></div>
+      <pre class="code" id="s2c1-vid">a hand reaches into frame and grabs the glowing phone off the nightstand, screen light sweeping across the dark room, vertical 9:16 smartphone video, handheld with slight natural shake, low light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c1-neg">Copy</button></div>
+      <pre class="code" id="s2c1-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">POV: your boss is you now</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">02</span><span class="clip-title">Coffee</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s2c2-img">Copy</button></div>
+      <pre class="code" id="s2c2-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, black work pants, and black low-top sneakers, leaning on a small kitchen counter holding a metal thermos, warm kitchen light, pre-dawn dark window behind him, vertical 9:16 smartphone photo, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c2-vid">Copy</button></div>
+      <pre class="code" id="s2c2-vid">he screws the lid onto the thermos and pushes off the counter toward the door, casual tired energy, vertical 9:16 smartphone video, handheld with slight natural shake, warm kitchen light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c2-neg">Copy</button></div>
+      <pre class="code" id="s2c2-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">5:52am</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">03</span><span class="clip-title">Load out</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s2c3-img">Copy</button></div>
+      <pre class="code" id="s2c3-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, black work pants, and black low-top sneakers, standing at the open rear doors of a plain white cargo van at dawn, lifting a plastic supply bin, parked in a suburban concrete driveway, vertical 9:16 smartphone photo, soft early morning light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c3-vid">Copy</button></div>
+      <pre class="code" id="s2c3-vid">he slides the bin into the van, slams the rear door shut, taps it twice with his hand, and walks toward the driver door, vertical 9:16 smartphone video, handheld with slight natural shake, soft early morning light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c3-neg">Copy</button></div>
+      <pre class="code" id="s2c3-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">first job: 7am</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">04</span><span class="clip-title">Drive</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s2c4-img">Copy</button></div>
+      <pre class="code" id="s2c4-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, seated in the driver seat of a van with his seatbelt on, morning light coming through the windshield, a metal thermos in the cup holder, vertical 9:16 smartphone photo, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c4-vid">Copy</button></div>
+      <pre class="code" id="s2c4-vid">he drives steadily, glancing at the road, suburban houses passing by in the side windows, relaxed posture, vertical 9:16 smartphone video, handheld with slight natural shake, morning light through the windshield, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c4-neg">Copy</button></div>
+      <pre class="code" id="s2c4-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">18 min out</span></div>
+      <div class="foot-item">Trim to <b>~3s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">05</span><span class="clip-title">Work montage A — foam</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt (hands only, no face)</span><button class="copy-btn" data-target="s2c5-img">Copy</button></div>
+      <pre class="code" id="s2c5-img">gloved hands foaming the door panel of a silver sedan parked in a driveway, cropped so no grille or badges are visible, vertical 9:16 smartphone photo, soft daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c5-vid">Copy</button></div>
+      <pre class="code" id="s2c5-vid">a foam cannon coats the silver sedan's door panel in thick white foam, suds sliding down toward the ground, framing stays on the door panel only, vertical 9:16 smartphone video, handheld with slight natural shake, soft daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c5-neg">Copy</button></div>
+      <pre class="code" id="s2c5-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">job 1</span></div>
+      <div class="foot-item">Trim to <b>~2s</b> filler beat</div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">06</span><span class="clip-title">A job books itself</span><div class="clip-badges"><span class="tag rec">real screen recording</span></div></div>
+    <div class="irl-box">
+      <div class="il">Not a Kling generation</div>
+      <p>Record: a notification banner appears on your lock screen → tap to open the app →
+      the new job request shows on screen with the 3 client-attached photos visible. Keep the
+      whole thing under 2.5 seconds, silent — no captions needed beyond the overlay below.</p>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">job 3 just booked itself</span></div>
+      <div class="foot-item">Max <b>2.5s</b></div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">07</span><span class="clip-title">Work montage B — mirror wipe</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt (hands only, no face)</span><button class="copy-btn" data-target="s2c7-img">Copy</button></div>
+      <pre class="code" id="s2c7-img">gloved hand holding a gray microfiber towel against the side mirror of a silver sedan, sun higher in the sky, cropped so no badges are visible, vertical 9:16 smartphone photo, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c7-vid">Copy</button></div>
+      <pre class="code" id="s2c7-vid">the gloved hand polishes the side mirror with the towel, flips it, and wipes the window edge in one continuous motion, vertical 9:16 smartphone video, handheld with slight natural shake, bright daylight, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c7-neg">Copy</button></div>
+      <pre class="code" id="s2c7-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">2:15pm</span></div>
+      <div class="foot-item">Trim to <b>~2s</b> filler beat</div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">08</span><span class="clip-title">Tailgate close — the emotional beat</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s2c8-img">Copy</button></div>
+      <pre class="code" id="s2c8-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, sitting on the rear bumper of a white cargo van with the doors open, golden hour light, drinking from a metal thermos, vertical 9:16 smartphone photo, warm golden light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s2c8-vid">Copy</button></div>
+      <pre class="code" id="s2c8-vid">he lowers the thermos, exhales, a small tired smile crossing his face, looking off toward the street, vertical 9:16 smartphone video, handheld with slight natural shake, warm golden hour light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s2c8-neg">Copy</button></div>
+      <pre class="code" id="s2c8-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">3 jobs. $740. home by 4.</span></div>
+      <div class="foot-item">Do <b>3–4 takes</b> — this is the beat viewers remember</div>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">09</span><span class="clip-title">Closer — no generation</span><div class="clip-badges"><span class="tag rec">capcut only</span></div></div>
+    <div class="irl-box">
+      <div class="il">Edit-only step</div>
+      <p>Hold the last frame of clip 08 for 1 second, cut to black, then bring in the final
+      overlay text on its own.</p>
+    </div>
+    <div class="foot-row"><div class="foot-item">Overlay: <span class="overlay-pill">day 1 of week 30 🧾</span></div></div>
+  </div>
+
+  <!-- ============================================================ SCRIPT 3 -->
+  <hr class="divider" />
+  <div class="script-head" id="script-3">
+    <span class="num">SCRIPT 03</span>
+    <h2>"He swore he paid me" — storytime pivot</h2>
+    <p>VO-driven — record yourself on a voice memo (beats generated TTS on trust) and cut the
+    visuals underneath it. Reuses the same character block as Script 2. Consistency pressure
+    is low here: these are mood shots, not literal continuity.</p>
+    <div class="script-meta"><span><b>4</b> generated clips</span><span><b>3</b> real screen recordings</span><span><b>~30s</b> final runtime</span><span>full VO script included below</span></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">01</span><span class="clip-title">The claim</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s3c1-img">Copy</button></div>
+      <pre class="code" id="s3c1-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, black work pants, standing in a driveway at dusk beside a clean dark SUV, holding his phone loosely at his side, unimpressed expression, framed so the SUV's grille and badge are out of frame behind him, vertical 9:16 smartphone photo, dusk light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s3c1-vid">Copy</button></div>
+      <pre class="code" id="s3c1-vid">he looks down at the phone, a slight disbelieving head shake, thumb scrolls once, vertical 9:16 smartphone video, handheld with slight natural shake, dusk light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s3c1-neg">Copy</button></div>
+      <pre class="code" id="s3c1-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"Last month a client swore he already paid me. Four hundred dollars. 'I Venmo'd your guy last week.'"</p></div>
+    <div class="foot-row"><div class="foot-item">Trim to <b>~4s</b></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">02</span><span class="clip-title">"I don't have a guy"</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s3c2-img">Copy</button></div>
+      <pre class="code" id="s3c2-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, standing alone at the open rear doors of a plain white cargo van at dusk, quiet residential street, vertical 9:16 smartphone photo, dusk light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s3c2-vid">Copy</button></div>
+      <pre class="code" id="s3c2-vid">he gestures around at the empty street with one hand, deadpan expression, shrugs, vertical 9:16 smartphone video, handheld with slight natural shake, dusk light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s3c2-neg">Copy</button></div>
+      <pre class="code" id="s3c2-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"...I don't have a guy. It's just me."</p></div>
+    <div class="foot-row"><div class="foot-item">Trim to <b>~3s</b></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">03</span><span class="clip-title">"Old me would've eaten that"</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s3c3-img">Copy</button></div>
+      <pre class="code" id="s3c3-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, sitting in the driver seat of a parked van, interior dome light on, rubbing his forehead with one hand, vertical 9:16 smartphone photo, dim interior light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s3c3-vid">Copy</button></div>
+      <pre class="code" id="s3c3-vid">he leans his head back against the seat and exhales slowly, tired frustration on his face, vertical 9:16 smartphone video, handheld with slight natural shake, dim interior dome light, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s3c3-neg">Copy</button></div>
+      <pre class="code" id="s3c3-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"Old me would've eaten that. No proof, no fight."</p></div>
+    <div class="foot-row"><div class="foot-item">Trim to <b>~3s</b></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">04</span><span class="clip-title">The timeline</span><div class="clip-badges"><span class="tag rec">real screen recording</span></div></div>
+    <div class="irl-box">
+      <div class="il">Not a Kling generation</div>
+      <p>Record: scroll the job's activity timeline in the app — invoice sent ✓, viewed ✓, due
+      date, payment status all visible. 4 seconds max.</p>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"But every job I do now gets logged the second it happens — invoice, timestamps, payment status."</p></div>
+    <div class="foot-row"><div class="foot-item">Max <b>4s</b></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">05</span><span class="clip-title">Send the link</span><div class="clip-badges"><span class="tag rec">real screen recording</span></div></div>
+    <div class="irl-box">
+      <div class="il">Not a Kling generation</div>
+      <p>Record: sharing the invoice link via text message from the app's share sheet. 2 seconds max.</p>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"So I just texted him the link."</p></div>
+    <div class="foot-row"><div class="foot-item">Max <b>2s</b></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">06</span><span class="clip-title">Paid</span><div class="clip-badges"><span class="tag rec">real screen recording</span></div></div>
+    <div class="irl-box">
+      <div class="il">Not a Kling generation</div>
+      <p>Record: invoice status flips to PAID with the receipt confirmation screen. 2 seconds
+      max. In the edit, add a bold <b>PAID ✓</b> text stamp over this clip for one beat.</p>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"Paid in two minutes. Even tipped."</p></div>
+    <div class="foot-row"><div class="foot-item">Max <b>2s</b></div><div class="foot-item">Overlay: <span class="overlay-pill">PAID ✓</span></div></div>
+  </div>
+
+  <div class="clip">
+    <div class="clip-head"><span class="clip-num">07</span><span class="clip-title">The punchline</span><div class="clip-badges"><span class="tag">still + video</span></div></div>
+    <div class="block">
+      <div class="block-label"><span>Still image prompt</span><button class="copy-btn" data-target="s3c7-img">Copy</button></div>
+      <pre class="code" id="s3c7-img">a man in his late 20s, medium-brown skin, short black fade haircut, athletic build, wearing a plain charcoal-gray crew-neck t-shirt, closing the rear door of a white cargo van at night under a streetlight, looking toward the camera with a half-smile, vertical 9:16 smartphone photo, streetlight glow, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Video prompt (start frame = image above)</span><button class="copy-btn" data-target="s3c7-vid">Copy</button></div>
+      <pre class="code" id="s3c7-vid">he shuts the door, gives a single nod toward the camera, and walks out of frame, vertical 9:16 smartphone video, handheld with slight natural shake, streetlight glow at night, muted realistic colors, subtle grain, documentary UGC realism, amateur framing</pre>
+    </div>
+    <div class="block">
+      <div class="block-label"><span>Negative prompt</span><button class="copy-btn" data-target="s3c7-neg">Copy</button></div>
+      <pre class="code" id="s3c7-neg">glossy commercial look, studio lighting, cinematic color grade, plastic skin, extra fingers, warped hands, legible text, watermark, jittery eyes, frozen lips, logo, brand logo, emblem, badge, hood ornament, grille badge, manufacturer marking, fictional brand mark</pre>
+    </div>
+    <div class="vo-box"><div class="vl">VO under this clip</div><p>"Moral of the story: show the receipts."</p></div>
+    <div class="foot-row">
+      <div class="foot-item">Overlay: <span class="overlay-pill">show the receipts 🧾</span></div>
+      <div class="foot-item">No logo, no link on screen — app name lives in the caption only</div>
+    </div>
+  </div>
+
+  <!-- ============================================================ ASSEMBLY -->
+  <hr class="divider" />
+  <div class="script-head" id="assembly">
+    <span class="num">ASSEMBLY</span>
+    <h2>CapCut checklist — same for all three</h2>
+  </div>
+  <ol class="steps">
+    <li data-n="1">Import clips in order, trim each to its noted length — cut every dead frame at the start of a clip.</li>
+    <li data-n="2">Screen recordings: crop to the phone's frame, speed 1.2–1.5×, add a subtle slow zoom-in.</li>
+    <li data-n="3">Captions: bold, high-contrast, center-bottom, 2–4 words per line, timed to the beat or VO.</li>
+    <li data-n="4">Audio: trending sound at ~20% under VO (Script 3) or ~70% with no VO (Scripts 1–2) — pull the sound from TikTok's Creative Center the day you post, not in advance.</li>
+    <li data-n="5">Export 1080×1920, post natively per platform, and log 3-second view-through rate per video against the retention benchmarks (70% = distribution threshold).</li>
+  </ol>
+</div>
+
+<script>
+(function () {
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', async function () {
+      var target = document.getElementById(btn.dataset.target);
+      if (!target) return;
+      var text = target.textContent;
+      var ok = false;
+      try {
+        await navigator.clipboard.writeText(text);
+        ok = true;
+      } catch (e) {}
+      if (!ok) {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+        } catch (e) {}
+      }
+      if (!ok) {
+        var range = document.createRange();
+        range.selectNodeContents(target);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+      var original = btn.textContent;
+      btn.textContent = ok ? 'Copied' : 'Select ⌘C';
+      btn.classList.add('copied');
+      setTimeout(function () {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1400);
+    });
+  });
+})();
+</script>
