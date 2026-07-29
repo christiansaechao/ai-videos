@@ -8,7 +8,9 @@
 | `rocco-content-calendar.md` | PW-1→3, VM-1→3, SF-1→3, CF-1→3 (launch 12) | 12 |
 | `rocco-scripts-vol2.md` | PW-4→38, VM-4→38 | 70 |
 | `rocco-scripts-vol3.md` | SF-4→38, CF-4→38 | 70 |
-| **Total** | **PW/VM/SF/CF ×38 each** | **152** |
+| `buck-scripts.md` | BK-PW/VM/SF/CF-1→10 + Buck kit | 40 |
+| `murph-scripts.md` | MU-PW/VM/SF/CF-1→10 + Murph kit | 40 |
+| **Total** | **Rocco 152 · Buck 40 · Murph 40** | **232** |
 
 Niches: **PW** pressure washing · **VM** vending · **SF** storage flipping · **CF** car flipping.
 
@@ -92,7 +94,28 @@ Suggested batches: 12–16 videos per session, one niche at a time.
 - **Export** out of Cantina to TikTok / Reels / Shorts. Don't rely on the in-app feed.
 - **Run it as a Storyline** so episodes compound for existing followers.
 
+## Bringing In Buck & Murph
+
+Rocco carries the first month alone — one character, one voice, easiest to build an
+audience around. Then:
+
+**Buck (week 5+).** His scripts pair by number: `BK-PW-1` answers `PW-1`. Post his
+reply a day or two after Rocco's claim lands, or stitch them. Start with
+**CF-36 "The Guy Who Actually Does This"** — Rocco noticing a competent neighbour —
+as the on-screen introduction.
+
+**Murph (week 6+).** He's the only character who *changes*, so he needs the audience
+to already know the world. Run his 40 roughly in order; the numbering is an arc from
+skepticism to action. Save **MU-CF-7 → MU-CF-10** (parks outside a stranger's house,
+knocks, buys the car, cleans it six hours, sells it for a thousand) for when you have
+followers — posted in sequence, close together, that run is the emotional spine of
+the channel and the strongest follow-driver you have.
+
+**Blended cadence once all three are live:** roughly 2 Rocco : 1 Buck-or-Murph. Rocco
+is the reach, the other two are the retention.
+
 ## After Two Months
 1. Rank niches by average views; kill the bottom one.
-2. Launch **Buck** as the reply-guy who corrects Rocco — start from CF-36.
-3. Rocco's best-performing 10 become the template for the next 150.
+2. Rocco's best-performing 10 become the template for the next 150.
+3. If Murph outperforms Rocco, follow it — the arc character is usually the one people
+   subscribe for.
