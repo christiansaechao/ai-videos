@@ -6,7 +6,7 @@ Companion to the 30 long-form scripts. Every Short = 2 blocks x 10 seconds (20s 
 
 ### 1.1 The $150-an-Hour Water Gun
 HOOK: "This machine turns plain water into one hundred fifty dollars an hour. Here's the math nobody believes." (visual: wand blasts one clean stripe through black driveway grime)
-PAYOFF: "A driveway takes ninety minutes and pays up to three hundred dollars. The machine costs six hundred. Follow for more hustle math." (visual: cash counter over gleaming wet driveway)
+PAYOFF: "A driveway takes two hours and pays up to three hundred dollars. The machine costs six hundred. Follow for more hustle math." (visual: cash counter over gleaming wet driveway)
 
 ### 1.2 The Free Marketing Machine
 HOOK: "Pressure washing is the only business where doing the work IS the advertising. Watch this." (visual: satisfying slow-motion grime peel, half-clean patio)
