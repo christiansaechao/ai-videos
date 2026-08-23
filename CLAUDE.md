@@ -9,20 +9,22 @@ Higgsfield **Plus: 1200 credits/month.** Verified costs via `get_cost` preflight
 
 | Config — 10s, 9:16 | Credits | Per Short (2 blocks) |
 |---|---|---|
-| **Kling 3.0 std, no native audio** | **15** | **30** |
-| Kling 3.0 Turbo 720p | 15 | 30 |
-| Kling 3.0 std, native audio | 20 | 40 |
+| **Kling 3.0 std, sound on** | **20** | **40** |
+| Kling 3.0 std, no audio | 15 | 30 |
 | Seedance 2.0 Mini 720p | 25 | 50 |
 
-**Ceiling: 40 Shorts/month.** Growth is production-capped, not idea-capped —
+At 40 credits/Short (2 blocks x 20), **ceiling is 30 Shorts/month** (1200/40). Growth is production-capped, not idea-capped —
 300 scripts is ~10 months of supply, so credits are the constraint, never ideas.
 
 ## Posting cadence
 
-**1 Short per day. 30/month = 900 credits. Hold 300 back for re-rolls**
-(~20 retries at 15 credits/block). Never plan to spend 100% on first attempts.
+**1 Short per day.** At 40 credits/Short, 1200 credits = 30 Shorts/month =
+exactly one per day with no slack. Any re-roll eats into the month, so keep
+prompts tight and preflight. If re-rolls become frequent, the real cadence is
+~26-28/day-equivalent — plan around 30 max, not a comfortable 30.
 
-Do **not** post 2/day — it burns the month in 20 days and goes dark.
+Do **not** post 2/day — the budget cannot sustain it (60 blocks/day would need
+2400 credits/month).
 
 **Rotate niches; never the same niche twice in a row.** With 30 niches and no
 performance data yet, one Short/day gives each video a clean 24-hour read.
@@ -38,16 +40,28 @@ independently from long-form, so there is no cannibalization risk.
 
 ## Generation settings
 
+**Each Short = two separate 10s clips (block 1 HOOK, block 2 PAYOFF),
+generated individually. The two clips are combined into the final 20s Short
+in an external video editor — NOT stitched inside Higgsfield.** This is the
+settled pipeline: Higgsfield only produces the two raw blocks; assembly,
+captions, and any music happen in the editor.
+
+Per block:
 - **Model: Kling 3.0**, `mode: std`, `duration: 10`, `aspect_ratio: 9:16`
-- **`sound: off`** — the clip file has no audio track; the Kevin VO is laid over
-  it in the edit. The published Short is never silent. Native audio costs +5
-  credits/block (+10/Short = 10 fewer Shorts a month) and yields a voice and
-  ambience that can't match the written script.
-- **720p is correct for Shorts.** Spec is 1080x1920 but 720x1280 is within spec
-  and not penalized. Motion and legible captions matter more than pixel count.
-- **There is no Kling 2.0 on Higgsfield** — only 2.6, 3.0, and 3.0 Turbo.
-  Kling 2.6 exposes no resolution parameter at all.
-- Voiceover costs are not yet measured.
+- **`sound: on`** — narration is generated together with the video in the same
+  Kling call (pass the block's narration line inside the prompt). One file per
+  block, audio baked in, nothing to layer. Cost: 20 credits/block = 40/Short.
+- **720p equivalent is fine for Shorts.** Spec is 1080x1920 but lower is within
+  spec and not penalized. Motion and legible captions matter more than pixels.
+
+Do NOT request a single 20s clip from Kling 3.0 — it silently clamps to 15s
+(hard max). The 2x10s split avoids that ceiling entirely.
+
+Notes:
+- **There is no Kling 2.0 on Higgsfield** — only 2.6, 3.0, 3.0 Turbo. Kling 2.6
+  exposes no resolution parameter.
+- Standalone TTS (seed_audio) is 0.7 credits/line if a separate VO is ever
+  wanted, but the current pipeline bakes audio into the video instead.
 
 ## Script format
 
