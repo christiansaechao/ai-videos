@@ -18,7 +18,7 @@ PAYOFF: "Fifty driveways this spring means fifty warm leads next spring. Nature 
 
 ### 1.4 The Neighbor Stack
 HOOK: "One clean driveway on a dirty street is a billboard. Here's how pros triple every trip." (visual: one glowing clean driveway between two grimy ones)
-PAYOFF: "Knock both neighbors, offer twenty percent off same-day — you're already there. Three driveways, one street, eight hundred dollars." (visual: three driveways cleaned down the street, sun flare)
+PAYOFF: "Knock both neighbors, offer twenty percent off same-day — you're already there. Three driveways, one street, eight hundred dollars. Follow for route math." (visual: three driveways cleaned down the street, sun flare)
 
 ### 1.5 The Rookie Mistake
 HOOK: "Biggest beginner mistake in pressure washing? Using maximum pressure on everything. It destroys decks and strips paint." (visual: too-strong jet gouging a wood deck, wince moment)
