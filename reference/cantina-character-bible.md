@@ -2,7 +2,7 @@
 
 New direction. **Kevin and the faceless-VO format are retired.** This replaces them
 with a recurring three-character cast built natively for Cantina (see
-`analysis/cantina-platform-research.md` for why the old format can't port).
+`cantina-platform-research.md` for why the old format can't port).
 
 **Tone target:** brainrot-adjacent — absurd talking produce, fast, funny, riding the
 live AI-fruit trend — but every video still lands one **real** number or mechanism

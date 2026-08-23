@@ -4,7 +4,7 @@ Rocco the raccoon fake-guru. Solo videos, built to trend. This is the spearhead
 of the channel — the most recognizable internet archetype (rented-Lambo "you can
 do this too" guy), so viewers get the joke instantly.
 
-See `analysis/cantina-platform-research.md` and `scripts/cantina-character-bible.md`
+See `../../reference/cantina-platform-research.md` and `../../reference/cantina-character-bible.md`
 for the cast and platform mechanics.
 
 ---

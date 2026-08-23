@@ -108,7 +108,7 @@ interpersonal conflict + serialization.** Not narration.
 
 ## 6. Implications for Our Side-Hustle Library — The Key Conflict
 
-Our existing `side-hustle-300-shorts.md` is built as:
+Our existing `scripts/bright-side/side-hustle-300-shorts.md` is built as:
 
 ```
 HOOK:   [Kevin VO narration]  (visual: b-roll cue)

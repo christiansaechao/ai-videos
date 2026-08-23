@@ -80,4 +80,4 @@ Their titles manufacture a curiosity gap — they promise a payoff and withhold 
 | Save best for last | The scaling/passive-income reveal goes last |
 | Comment bait | "What's YOUR city's going rate for a full detail? Drop it below!" |
 
-First script using this template: `scripts/mobile-detailing-side-hustle.md`
+First script using this template: `scripts/bright-side/mobile-detailing-side-hustle.md`

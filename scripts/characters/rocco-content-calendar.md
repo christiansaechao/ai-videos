@@ -5,8 +5,8 @@ storage flipping, car flipping), 3 per niche. Each one **parodies a specific,
 current, real trend or cliché** in that niche — so it lands with the actual
 hustle-tok audience, not just as generic AI slop.
 
-Builds on `scripts/rocco-solo-batch.md` (format + trending playbook) and
-`scripts/cantina-character-bible.md` (cast). Supersedes the 6-script batch for the
+Builds on `rocco-solo-batch.md` (format + trending playbook) and
+`../../reference/cantina-character-bible.md` (cast). Supersedes the 6-script batch for the
 launch — we dropped pet waste and Christmas lights to focus these four.
 
 **Format reminder:** 4 shots per video. Three fields per shot — **Opening frame**
