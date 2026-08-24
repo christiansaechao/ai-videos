@@ -57,6 +57,30 @@ Per block:
 Do NOT request a single 20s clip from Kling 3.0 — it silently clamps to 15s
 (hard max). The 2x10s split avoids that ceiling entirely.
 
+### Captions — burned in Higgsfield, not CapCut
+
+Use Higgsfield's **`subtitles` workflow** (get_workflow_instructions with
+`{workflow: "subtitles"}`) to burn on-screen captions. It Whisper-times the
+clip's own baked-in narration, burns the text into the pixels, and returns a new
+mp4. This replaces CapCut auto-captions (which are paywalled behind Pro).
+
+- **Font: Anton** — `bold --font-key anton`. This is exactly the "burned Anton
+  captions" the script spec calls for; it's a confirmed available font.
+- **Always pass `--script`** with that block's exact HOOK or PAYOFF line. Whisper
+  then supplies only the timing; the displayed words come from the script, so
+  numbers and wording render the way we wrote them instead of however Whisper
+  guessed. (Note: scripts spell numbers out for VO — "one hundred fifty dollars".
+  If a caption should read "$150" instead, author a caption-specific line.)
+- **Burn per block, before combining.** Each 10s clip carries its own audio, so
+  caption each block against its own narration, THEN combine the two captioned
+  blocks in CapCut. Concatenation preserves sync — no round-trip needed.
+- **Cost:** subtitles is a sandbox operation, NOT a generate_* call, so it is not
+  the 20-credit video charge — billed "as usual" for assembly. Actual per-run
+  cost not yet confirmed; check before leaning on it at volume.
+
+Pipeline per block: generate (Kling, sound on) -> burn Anton captions
+(subtitles workflow) -> hand the captioned block to CapCut for final combine.
+
 Notes:
 - **There is no Kling 2.0 on Higgsfield** — only 2.6, 3.0, 3.0 Turbo. Kling 2.6
   exposes no resolution parameter.
