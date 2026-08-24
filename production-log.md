@@ -39,3 +39,43 @@ CDN base: `https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl
 - [ ] Captions burned (Anton, subtitles workflow) — not yet run
 - [ ] Blocks combined in CapCut
 - [ ] Uploaded to YouTube
+
+---
+
+# Production Log — Lawn Care (Niche 2)
+
+Generated Aug 24. Same settings: Kling 3.0 std, 9:16, 10s, sound on, 20 cr/block.
+
+| Script | Block | Save as | Higgsfield file |
+|---|---|---|---|
+| 2.1 | HOOK | lawn_2.1_hook.mp4 | hf_20260824_131115_e5da51fd-535c-4dd0-a3e3-2b6af899dbac.mp4 |
+| 2.1 | PAYOFF | lawn_2.1_payoff.mp4 | hf_20260824_131115_4b4d7ec3-216a-42ac-b3df-87ea0740059c.mp4 |
+| 2.2 | HOOK | lawn_2.2_hook.mp4 | hf_20260824_131115_d5527224-2313-486e-9cf7-100202c1de39.mp4 |
+| 2.2 | PAYOFF | lawn_2.2_payoff.mp4 | hf_20260824_131115_5dfd605a-ac9d-477c-a0b6-7e84c08c95c2.mp4 |
+| 2.3 | HOOK | lawn_2.3_hook.mp4 | hf_20260824_131116_a5962c66-3049-4251-afd6-e8cad042992d.mp4 |
+| 2.3 | PAYOFF | lawn_2.3_payoff.mp4 | hf_20260824_131115_1f9a0d0b-9970-4694-b33c-fd85f535d569.mp4 |
+| 2.4 | HOOK | lawn_2.4_hook.mp4 | hf_20260824_131115_7c374d3d-8aac-4da3-be18-2eee9473f726.mp4 |
+| 2.4 | PAYOFF | lawn_2.4_payoff.mp4 | hf_20260824_131115_707ed467-7fd0-48d0-8db9-1abe01339f8f.mp4 |
+| 2.5 | HOOK | lawn_2.5_hook.mp4 | hf_20260824_131115_2777b832-6f28-45ec-9d84-dcc1655b631f.mp4 |
+| 2.5 | PAYOFF | lawn_2.5_payoff.mp4 | hf_20260824_131115_324b146a-ad38-46fb-9619-0ceee0110a80.mp4 |
+| 2.6 | HOOK | lawn_2.6_hook.mp4 | hf_20260824_131115_5b19dce4-d23e-4dbf-ac1f-6413c2507ef3.mp4 |
+| 2.6 | PAYOFF | lawn_2.6_payoff.mp4 | hf_20260824_131116_0332af6d-c11e-4784-8522-0ecfb7465631.mp4 |
+| 2.7 | HOOK | lawn_2.7_hook.mp4 | hf_20260824_131140_882dc5d9-e847-4b83-bb7c-bedf431acf33.mp4 |
+| 2.7 | PAYOFF | lawn_2.7_payoff.mp4 | hf_20260824_131140_0b41f8a6-2870-4804-beb5-3e7198d80e3e.mp4 |
+| 2.8 | HOOK | lawn_2.8_hook.mp4 | hf_20260824_131141_a619d446-78f2-433b-9768-995a10bece2f.mp4 |
+| 2.8 | PAYOFF | lawn_2.8_payoff.mp4 | hf_20260824_131140_a6335eab-fd7d-4e69-b154-59cf200a813c.mp4 |
+| 2.9 | HOOK | lawn_2.9_hook.mp4 | hf_20260824_131141_79fd41e4-c12d-410f-b8e5-2b15b1655908.mp4 |
+| 2.9 | PAYOFF | lawn_2.9_payoff.mp4 | hf_20260824_131141_4e8e6db8-e95a-4904-add7-06fb1598ce84.mp4 |
+| 2.10 | HOOK | lawn_2.10_hook.mp4 | hf_20260824_131140_0a656e20-a241-4365-82fc-bc7884cef90d.mp4 |
+| 2.10 | PAYOFF | lawn_2.10_payoff.mp4 | hf_20260824_131141_50d3cf28-4325-4360-859d-849b9e614130.mp4 |
+
+## Credit status (this billing cycle)
+- Pressure Washing: 400 cr
+- Lawn Care: 400 cr
+- Session experiments (early detours): ~46 cr
+- **Balance: 354.3 / 1200**
+
+**Pool Cleaning (niche 3) needs 400 cr but only 354.3 remain this cycle** — it
+does not fully fit until credits renew. Options: generate 8 of 10 pool scripts
+now (320 cr), or wait for the renewal and generate all 10 then. Two niches
+(PW + Lawn = 20 Shorts) are already in the can either way.
