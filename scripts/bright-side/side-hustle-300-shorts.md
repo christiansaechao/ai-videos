@@ -18,37 +18,82 @@ PAYOFF: "A driveway takes two hours and pays up to three hundred dollars. The ma
 HOOK: "Pressure washing is the only business where doing the work IS the advertising. Watch this." (visual: satisfying slow-motion grime peel, half-clean patio)
 PAYOFF: "Film one pass, post it, and neighbors line up. Transformation videos get millions of views for free. Follow for part two." (visual: phone filming the clean stripe, views counter climbing)
 
+**UPLOAD METADATA**
+- **Title:** Pressure Washing Is Free Advertising 📈
+- **Description:** In pressure washing, doing the job IS the marketing. Film one satisfying pass, post it, and the whole street lines up. Follow for a new hustle breakdown every day.
+  #sidehustle #pressurewashing #satisfying #smallbusiness #makemoney
+
 ### 1.3 Demand That Grows Back
 HOOK: "Every driveway I clean gets dirty again. And that's the best part of this business." (visual: timelapse of algae creeping back over clean concrete)
 PAYOFF: "Fifty driveways this spring means fifty warm leads next spring. Nature refills the job board every year. Follow for more." (visual: calendar flipping, repeat bookings stacking)
+
+**UPLOAD METADATA**
+- **Title:** The Business Where Demand Grows Back 🔁
+- **Description:** Every driveway you clean gets dirty again — which means one customer this spring is a warm lead next spring. Recurring demand, built in. Follow for daily side-hustle math.
+  #sidehustle #pressurewashing #recurringrevenue #passiveincome #smallbusiness
 
 ### 1.4 The Neighbor Stack
 HOOK: "One clean driveway on a dirty street is a billboard. Here's how pros triple every trip." (visual: one glowing clean driveway between two grimy ones)
 PAYOFF: "Knock both neighbors, offer twenty percent off same-day — you're already there. Three driveways, one street, eight hundred dollars. Follow for route math." (visual: three driveways cleaned down the street, sun flare)
 
+**UPLOAD METADATA**
+- **Title:** How Pros Triple Every Pressure Washing Trip 💰
+- **Description:** One clean driveway on a dirty street is a free billboard. Knock the two neighbors, same-day discount, and you leave with three jobs instead of one. Follow for more route math.
+  #sidehustle #pressurewashing #hustlemath #smallbusiness #makemoney
+
 ### 1.5 The Rookie Mistake
 HOOK: "Biggest beginner mistake in pressure washing? Using maximum pressure on everything. It destroys decks and strips paint." (visual: too-strong jet gouging a wood deck, wince moment)
 PAYOFF: "Pros match pressure to surface: soft-wash siding, medium decks, full power concrete. Knowledge is the business. Follow to learn it." (visual: gentle soft-wash mist over house siding, perfect result)
+
+**UPLOAD METADATA**
+- **Title:** The Pressure Washing Mistake That Wrecks Decks ⚠️
+- **Description:** The #1 beginner error: max pressure on everything. Pros match pressure to surface — soft-wash siding, medium decks, full power concrete. The knowledge IS the business. Follow to learn it.
+  #sidehustle #pressurewashing #beginnermistakes #smallbusiness #howto
 
 ### 1.6 The Add-On Doubler
 HOOK: "The driveway is just the doorway. Watch the invoice double in the last ten minutes." (visual: driveway done; wand moves to fence, then trash bins)
 PAYOFF: "Fence, one fifty. Deck, two hundred. Siding, three hundred more. Never leave with one surface cleaned. Comment your driveway price." (visual: invoice lines stacking up on screen)
 
+**UPLOAD METADATA**
+- **Title:** Double a Pressure Washing Invoice in 10 Minutes 💵
+- **Description:** The driveway is just the doorway. Fence, deck, siding — never leave with one surface cleaned and watch the invoice double. Comment your driveway price below.
+  #sidehustle #pressurewashing #upsell #smallbusiness #hustlemath
+
 ### 1.7 The Commercial Secret
 HOOK: "Homeowners pay the bills. But shopping plazas? They build wealth. Here's the contract secret." (visual: empty plaza at dawn, surface cleaner gliding across sidewalk)
 PAYOFF: "Commercial contracts run one to five thousand a month and auto-renew. One plaza equals twenty driveways — every month. Follow for more." (visual: contract signing, recurring calendar highlighting)
+
+**UPLOAD METADATA**
+- **Title:** Skip Driveways — This Pays $5,000/Month 🏢
+- **Description:** Homeowners pay the bills, but commercial contracts build wealth: one to five thousand a month, auto-renewing. One plaza equals twenty driveways. Follow for more.
+  #sidehustle #pressurewashing #commercialcleaning #passiveincome #smallbusiness
 
 ### 1.8 Startup Cost Reality Check
 HOOK: "Everyone thinks you need a fancy rig. My first setup cost less than a phone." (visual: modest pressure washer and surface cleaner in a hatchback trunk)
 PAYOFF: "Six hundred for the washer, two hundred in accessories. Two driveways pays it all back. Then it's profit. Save this." (visual: two jobs done, equipment cost crossed out on screen)
 
+**UPLOAD METADATA**
+- **Title:** I Started Pressure Washing for Less Than a Phone 📱
+- **Description:** No fancy rig required. Six hundred for the washer, two hundred in accessories — and two driveways pays it all back. After that it's profit. Save this for your startup list.
+  #sidehustle #pressurewashing #startupcost #makemoney #smallbusiness
+
 ### 1.9 Rain Day Economics
 HOOK: "Think rain kills this business? Wrong. Here's what smart washers do all winter." (visual: rainy window; then gear being serviced in garage)
 PAYOFF: "Book spring slots in February at early-bird rates, service equipment, sell gift cards. The season starts before the sun. Follow." (visual: calendar of spring bookings filling in winter)
 
+**UPLOAD METADATA**
+- **Title:** Pressure Washing Doesn't Stop in Winter ❄️
+- **Description:** Think rain kills this business? Smart washers book spring slots early, service gear, and sell gift cards all winter. The season starts before the sun. Follow for daily hustle tips.
+  #sidehustle #pressurewashing #winterhustle #smallbusiness #passiveincome
+
 ### 1.10 The Satisfying Career Question
 HOOK: "Would you quit your desk job to blast driveways for two hundred an hour? Serious question." (visual: split screen: fluorescent office vs. sunny driveway with rainbow mist)
 PAYOFF: "No boss, no commute, instant results you can see. The catch? Your arms will know about it. Vote in the comments." (visual: satisfied stretch at sunset, gleaming concrete behind)
+
+**UPLOAD METADATA**
+- **Title:** Would You Quit Your Desk Job for This? 🤔
+- **Description:** No boss, no commute, and results you can see instantly. The only catch? Your arms will feel it. Would you trade the cubicle for the driveway? Vote in the comments.
+  #sidehustle #pressurewashing #9to5 #quityourjob #makemoney
 
 ## 2. Lawn Care
 
