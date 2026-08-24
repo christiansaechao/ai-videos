@@ -79,3 +79,35 @@ Generated Aug 24. Same settings: Kling 3.0 std, 9:16, 10s, sound on, 20 cr/block
 does not fully fit until credits renew. Options: generate 8 of 10 pool scripts
 now (320 cr), or wait for the renewal and generate all 10 then. Two niches
 (PW + Lawn = 20 Shorts) are already in the can either way.
+
+---
+
+# Production Log — Pool Cleaning (Niche 3, PARTIAL)
+
+Generated Aug 24. Scripts 5.1–5.8 only (16 blocks, 320 cr). **5.9 and 5.10 not
+yet generated — deferred to the Sep 1 credit renewal** (only 34.3 cr left).
+
+| Script | Block | Save as | Higgsfield file |
+|---|---|---|---|
+| 5.1 | HOOK | pool_5.1_hook.mp4 | hf_20260824_132227_43a82285-6dbc-4afa-9855-8f602d7058e4.mp4 |
+| 5.1 | PAYOFF | pool_5.1_payoff.mp4 | hf_20260824_132227_eaf060a9-9412-41f6-a57e-72b3aaa14317.mp4 |
+| 5.2 | HOOK | pool_5.2_hook.mp4 | hf_20260824_132227_37ca549a-3d7b-4a2a-a149-bbf4d7547d28.mp4 |
+| 5.2 | PAYOFF | pool_5.2_payoff.mp4 | hf_20260824_132228_197834b7-b8e3-4c4b-93e7-66c510b2abf7.mp4 |
+| 5.3 | HOOK | pool_5.3_hook.mp4 | hf_20260824_132227_8ddf5ea8-b213-4537-986c-49987f42a5b2.mp4 |
+| 5.3 | PAYOFF | pool_5.3_payoff.mp4 | hf_20260824_132227_364fee23-9af5-471f-85f6-38fb81a22178.mp4 |
+| 5.4 | HOOK | pool_5.4_hook.mp4 | hf_20260824_132227_32676699-b669-404c-994b-a74af5698f63.mp4 |
+| 5.4 | PAYOFF | pool_5.4_payoff.mp4 | hf_20260824_132227_0cb25912-6477-4dff-86b9-a737af54a033.mp4 |
+| 5.5 | HOOK | pool_5.5_hook.mp4 | hf_20260824_132227_210e8f25-9f80-49e2-8726-c50766be58e4.mp4 |
+| 5.5 | PAYOFF | pool_5.5_payoff.mp4 | hf_20260824_132227_c118e3d6-752d-4803-a15d-a544d5c13653.mp4 |
+| 5.6 | HOOK | pool_5.6_hook.mp4 | hf_20260824_132228_89be59c9-2040-422d-a9a5-95a550bcd5ee.mp4 |
+| 5.6 | PAYOFF | pool_5.6_payoff.mp4 | hf_20260824_132227_46bebbc8-b3a4-45ea-bd7f-bdb48395907f.mp4 |
+| 5.7 | HOOK | pool_5.7_hook.mp4 | hf_20260824_132254_303105c8-df21-4511-86ff-94ce0ddc23f3.mp4 |
+| 5.7 | PAYOFF | pool_5.7_payoff.mp4 | hf_20260824_132242_e95db898-903d-4077-af91-6ef334fab5db.mp4 |
+| 5.8 | HOOK | pool_5.8_hook.mp4 | hf_20260824_132254_c1094003-c54b-4eb1-8855-27bf9e6279ec.mp4 |
+| 5.8 | PAYOFF | pool_5.8_payoff.mp4 | hf_20260824_132242_40522c78-7951-44be-bafe-faedb52270a2.mp4 |
+| 5.9 | — | (deferred) | generate on/after Sep 1 |
+| 5.10 | — | (deferred) | generate on/after Sep 1 |
+
+## Cycle total (August)
+- Pressure Washing 400 + Lawn Care 400 + Pool 5.1–5.8 320 + experiments ~46 = ~1,166
+- **Balance: 34.3 / 1200.** 5.9 + 5.10 (40 cr) run after Sep 1 renewal.
