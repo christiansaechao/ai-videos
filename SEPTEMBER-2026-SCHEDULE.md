@@ -58,6 +58,25 @@ the can, so September only needs Lawn Care + Pool Cleaning generated = 20 Shorts
 - [ ] Combine each pair in CapCut → 20 finished Shorts
 - [ ] Log job IDs in production-log.md
 
+## Credit cycle strategy (bleed August into September)
+
+Credits renew on the 1st. By generating Pressure Washing + Lawn Care now (on
+August's budget), September's fresh 1,200 only has to cover the third niche:
+
+| September | Credits |
+|---|---|
+| Fresh allotment (Sep 1) | 1,200 |
+| Pool Cleaning generation (20 blocks) | -400 |
+| **Left for re-rolls + October head start** | **~800** |
+
+This is the whole point: front-loading two niches turns the tight
+"3 niches = full budget, zero margin" month into one with ~800 credits of
+cushion — roughly 40 re-rolls of buffer. The ~354 left over in August expires
+at renewal, but it is already spent (two niches are generated), not wasted.
+
+**Action:** generate Pool Cleaning 5.1-5.10 on/after Sep 1, not before —
+doing it in August would eat the buffer and push into overage.
+
 ## Budget for September
 | Item | Credits |
 |---|---|
