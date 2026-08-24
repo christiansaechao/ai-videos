@@ -101,41 +101,91 @@ PAYOFF: "No boss, no commute, instant results you can see. The catch? Your arms 
 HOOK: "Grass grows back every week. Which means one lawn customer isn't one sale — it's twenty-six." (visual: perfect striped lawn, mower finishing a row)
 PAYOFF: "Forty dollars a cut, weekly, all season: over a thousand per yard. Twenty yards is twenty grand. Follow for the playbook." (visual: calendar filling with recurring mows, revenue counter)
 
+**UPLOAD METADATA**
+- **Title:** One Lawn Customer Is Worth $1,000/Year 🌱
+- **Description:** Grass grows back every week, so one lawn customer isn't one sale — it's twenty-six. Forty a cut times a season adds up fast. Follow for the playbook.
+  #sidehustle #lawncare #lawnmowing #recurringrevenue #makemoney
+
 ### 2.2 The Garage You Already Own
 HOOK: "The startup kit for a lawn business is already in your garage. Go look." (visual: garage door opens: mower, trimmer, blower revealed like treasure)
 PAYOFF: "Mower, trimmer, blower — five hundred dollars new, often free used. First month of customers pays for everything. Save this." (visual: tools loading into a small trailer)
+
+**UPLOAD METADATA**
+- **Title:** Your Lawn Business Is Already in Your Garage 🚜
+- **Description:** Mower, trimmer, blower — the whole startup kit is probably already in your garage, or free secondhand. First month of customers pays for it. Save this.
+  #sidehustle #lawncare #startupcost #smallbusiness #makemoney
 
 ### 2.3 Route Density Explained in 20 Seconds
 HOOK: "Rookie mowers drive forty minutes between yards. Pros mow five yards on one street. Here's why." (visual: map: scattered pins vs. tight cluster on one street)
 PAYOFF: "Less driving, more mowing, more profit per gallon. Pitch neighbors: I'm here every Tuesday anyway — ten percent off. Follow." (visual: mower rolling directly to next-door lawn)
 
+**UPLOAD METADATA**
+- **Title:** Why Pros Mow 5 Yards on One Street 🗺️
+- **Description:** Rookies drive forty minutes between yards; pros cluster five on one street. Less driving, more mowing, more profit per gallon. Follow for more.
+  #sidehustle #lawncare #routedensity #smallbusiness #hustlemath
+
 ### 2.4 The $150 Yard Visit
 HOOK: "This forty-dollar mow just became a hundred-fifty-dollar visit. Watch the upsell." (visual: mow finishing; edger, hedge trimmer, mulch appearing)
 PAYOFF: "Edging, hedges, mulch, weed treatment — add-ons the owner already wanted. You just have to ask. Comment your mow price." (visual: transformed yard, invoice lines stacking)
+
+**UPLOAD METADATA**
+- **Title:** How a $40 Mow Becomes a $150 Visit 💵
+- **Description:** Edging, hedges, mulch, weed treatment — add-ons the owner already wanted, if you just ask. Watch a forty-dollar mow become a hundred-fifty-dollar visit. Comment your mow price.
+  #sidehustle #lawncare #upsell #smallbusiness #makemoney
 
 ### 2.5 Cleanup Season Cash Cannon
 HOOK: "Twice a year, lawn money doubles. Most beginners completely miss it." (visual: leaves burying a yard; crew clearing in timelapse)
 PAYOFF: "Spring and fall cleanups run two to five hundred per yard — and one-timers become weekly clients. Follow before spring hits." (visual: before/after cleanup, new recurring booking pinging)
 
+**UPLOAD METADATA**
+- **Title:** Twice a Year, Lawn Money Doubles 🍂
+- **Description:** Spring and fall cleanups run two to five hundred a yard — and one-timers turn into weekly clients. Most beginners miss it. Follow before spring hits.
+  #sidehustle #lawncare #falcleanup #smallbusiness #passiveincome
+
 ### 2.6 The Teenager Out-Earning Adults
 HOOK: "There's a teenager in your neighborhood making more per hour than your dentist. With a mower." (visual: young silhouette pushing mower, cash fanning overlay)
 PAYOFF: "No degree, no interview, no boss. Just straight lines and showing up weekly. The bar is that low. Follow for more." (visual: perfect striped lawn reveal)
+
+**UPLOAD METADATA**
+- **Title:** This Teenager Out-Earns Your Dentist 🤯
+- **Description:** There's a kid in your neighborhood making more per hour than a dentist — with a mower. No degree, no boss, just straight lines and showing up. Follow for more.
+  #sidehustle #lawncare #lawnmowing #makemoney #teenhustle
 
 ### 2.7 First Helper, Double Money
 HOOK: "Solo mowing caps at thirty yards a week. Here's the moment it becomes a business." (visual: one mower; then two crews side by side)
 PAYOFF: "Hire one helper, capacity doubles, every mow still profits. That's owner math, not worker math. Save this for later." (visual: schedule board doubling, owner checking phone)
 
+**UPLOAD METADATA**
+- **Title:** The Moment Mowing Becomes a Business 📈
+- **Description:** Solo mowing caps around thirty yards a week. Hire one helper and capacity doubles while every mow still profits. That's owner math. Save this.
+  #sidehustle #lawncare #smallbusiness #scaling #makemoney
+
 ### 2.8 Winter Is Not the Off-Season
 HOOK: "What do lawn guys do in winter? The smart ones make MORE money. Here's how." (visual: mower parked; snowplow blade dropping onto truck)
 PAYOFF: "Snow removal, gutter clearing, holiday lights — same customers, same truck. Winter contracts can match a whole summer. Follow." (visual: snow clearing driveway, lights going up on roofline)
+
+**UPLOAD METADATA**
+- **Title:** What Lawn Guys Really Do in Winter ❄️
+- **Description:** The smart ones make MORE money: snow removal, gutter clearing, holiday lights — same customers, same truck. Winter can match a whole summer. Follow.
+  #sidehustle #lawncare #winterhustle #snowremoval #smallbusiness
 
 ### 2.9 The Biggest Beginner Mistake
 HOOK: "The number one mistake new lawn businesses make? Pricing by guilt instead of math." (visual: nervous quote scribbled low on paper)
 PAYOFF: "Charge for the drive, the trim, the blow-off, the insurance — not just the mow. Underpricing kills more mowers than drought. Follow." (visual: proper quote sheet, confident handshake)
 
+**UPLOAD METADATA**
+- **Title:** The Pricing Mistake That Kills Lawn Businesses ⚠️
+- **Description:** The number one beginner mistake: pricing by guilt instead of math. Charge for the drive, the trim, the blow-off, the insurance — not just the mow. Follow.
+  #sidehustle #lawncare #pricing #smallbusiness #beginnermistakes
+
 ### 2.10 Grass vs. Crypto
 HOOK: "Everyone's chasing crypto while the most reliable money in America grows a quarter inch per day." (visual: chaotic price chart vs. serene growing lawn)
 PAYOFF: "Eighty million backyards, demand that literally grows, zero volatility. Boring wins. Would you mow for twenty grand a season? Comment." (visual: mower stripe finishing, cash counter settling)
+
+**UPLOAD METADATA**
+- **Title:** Grass vs. Crypto: Which Actually Pays? 📈
+- **Description:** Everyone chases crypto while the most reliable money in America grows a quarter inch a day. Eighty million backyards, zero volatility. Would you mow for twenty grand a season? Comment.
+  #sidehustle #lawncare #passiveincome #makemoney #crypto
 
 ## 3. Window Cleaning
 
@@ -227,41 +277,91 @@ PAYOFF: "Gloves exist. Mortgages exist too. Could you handle six weeks of gross 
 HOOK: "Pool routes sell for tens of thousands of dollars. Like taxi medallions of the suburbs." (visual: sparkling pool, map of pool icons connected in a loop)
 PAYOFF: "Twenty pools, two thousand a month, two days a week — and the route itself is sellable property. Follow for more." (visual: route map stamped SOLD with price tag)
 
+**UPLOAD METADATA**
+- **Title:** Pool Routes Sell for Tens of Thousands 💰
+- **Description:** A pool route is like a taxi medallion of the suburbs — twenty pools, two thousand a month, and the route itself is sellable property. Follow for more.
+  #sidehustle #poolcleaning #poolservice #passiveincome #makemoney
+
 ### 5.2 The Twenty-Minute Visit
 HOOK: "A full pool service visit takes twenty minutes. Watch the whole thing." (visual: fast montage: skim, brush, vacuum, test, dose)
 PAYOFF: "Skim, brush, vacuum, test, dose. Forty to sixty dollars an hour, in sunshine, next to water. Follow for the details." (visual: glass-still blue pool, checklist complete)
+
+**UPLOAD METADATA**
+- **Title:** A Full Pool Service Takes 20 Minutes ⏱️
+- **Description:** Skim, brush, vacuum, test, dose — the whole visit is twenty minutes. Forty to sixty an hour, in sunshine, next to the water. Follow for the details.
+  #sidehustle #poolcleaning #poolservice #smallbusiness #makemoney
 
 ### 5.3 Chemistry Scares Everyone (Good)
 HOOK: "Why doesn't everyone clean pools? Two words: water chemistry. And that's your moat." (visual: test strips, pH numbers floating dramatically)
 PAYOFF: "It's a weekend of studying and a fifty-dollar kit. The fear filters out your competition. Small moat, good income. Follow." (visual: test strip matching perfect color, confident nod)
 
+**UPLOAD METADATA**
+- **Title:** Why Water Chemistry Is Your Money Moat 🧪
+- **Description:** Why doesn't everyone clean pools? Water chemistry — and that's exactly your moat. A weekend of studying and a fifty-dollar kit filters out your competition. Follow.
+  #sidehustle #poolcleaning #poolservice #smallbusiness #howto
+
 ### 5.4 Green to Clean
 HOOK: "This pool is a swamp. In four days it'll be glass — and pay eight hundred dollars." (visual: algae-green pool, dramatic push-in)
 PAYOFF: "Green-to-clean rescues bill three to eight hundred. The before-and-after photo books the next three customers. Follow." (visual: timelapse swamp to crystal blue)
+
+**UPLOAD METADATA**
+- **Title:** This Swamp Pays $800 in 4 Days 🏊
+- **Description:** This green swamp becomes glass in four days — and bills three to eight hundred dollars. The before-and-after photo books the next three customers. Follow.
+  #sidehustle #poolcleaning #greentoclean #satisfying #makemoney
 
 ### 5.5 The Pump Repair Raise
 HOOK: "Hear that squeal? That's a dying pool pump — and a three-hundred-dollar repair ticket." (visual: pump close-up, subtle wobble; wrench arriving)
 PAYOFF: "Learn basic equipment swaps from free videos: one fifty to five hundred per repair on top of weekly service. Follow." (visual: new pump humming, invoice adding repair line)
 
+**UPLOAD METADATA**
+- **Title:** That Squeal Is a $300 Repair Ticket 🔧
+- **Description:** Hear that squeal? A dying pool pump is a three-hundred-dollar repair. Learn basic swaps from free videos and add one fifty to five hundred on top of weekly service. Follow.
+  #sidehustle #poolcleaning #poolrepair #smallbusiness #makemoney
+
 ### 5.6 Winter Still Pays
 HOOK: "Think pool money ends in September? Closings, openings, and winter service say otherwise." (visual: cover rolling over pool, leaves swirling)
 PAYOFF: "Two to four hundred to close, same to open, reduced winter service between. The pool never stops billing. Follow." (visual: four-season montage, invoices in each)
+
+**UPLOAD METADATA**
+- **Title:** Pool Money Doesn't End in September ❄️
+- **Description:** Closings, openings, and winter service keep billing all year: two to four hundred to close, the same to open, reduced service between. The pool never stops paying. Follow.
+  #sidehustle #poolcleaning #poolservice #winterhustle #passiveincome
 
 ### 5.7 The Vacation Effect
 HOOK: "Every pool owner eventually admits the same thing: I bought it to float in, not to work on." (visual: owner relaxing on float, tech working in background)
 PAYOFF: "That gap between owning and maintaining is a hundred-fifty-dollar monthly subscription. Ninety percent never cancel. Follow for more." (visual: auto-renewing payment notification, serene pool)
 
+**UPLOAD METADATA**
+- **Title:** Why Pool Owners Pay $150/Month Forever 🔁
+- **Description:** Every owner admits it: I bought it to float in, not to work on. That gap is a hundred-fifty-dollar monthly subscription, and ninety percent never cancel. Follow for more.
+  #sidehustle #poolcleaning #recurringrevenue #passiveincome #makemoney
+
 ### 5.8 The First Five Pools
 HOOK: "Want your first five pool accounts this month? Here's exactly where they're hiding." (visual: neighborhood aerial, pool after pool in backyards)
 PAYOFF: "Next-door groups, realtor contacts, and one flyer at the pool supply store. Offer the first month half off. Follow." (visual: flyer posting, phone buzzing with replies)
+
+**UPLOAD METADATA**
+- **Title:** Where to Find Your First 5 Pool Accounts 📍
+- **Description:** Want five pool accounts this month? Next-door groups, realtor contacts, and one flyer at the pool supply store. Offer the first month half off. Follow.
+  #sidehustle #poolcleaning #poolservice #smallbusiness #howto
 
 ### 5.9 The Mistake That Kills Margins
 HOOK: "New pool techs make one brutal mistake: eating the chemical costs. Never eat the chemicals." (visual: chlorine bucket pouring, price tag flashing)
 PAYOFF: "Chemicals bill separately or your margin evaporates in a heat wave. Service plus supplies, always itemized. Save this." (visual: itemized invoice, margin bar staying tall)
 
+**UPLOAD METADATA**
+- **Title:** Never Eat the Chemical Costs ⚠️
+- **Description:** New pool techs make one brutal mistake: eating the chemical costs. Bill chemicals separately or your margin evaporates in a heat wave. Service plus supplies, always itemized. Save this.
+  #sidehustle #poolcleaning #poolservice #pricing #smallbusiness
+
 ### 5.10 Sell the Exit
 HOOK: "Most side hustles end when you stop. This one hands you a check on the way out." (visual: handshake over paperwork, route map transferring)
 PAYOFF: "Forty pools built over three years sells for forty to sixty grand — after paying you the whole time. Follow for more exits." (visual: sale price reveal, sunset pool)
+
+**UPLOAD METADATA**
+- **Title:** This Side Hustle Pays You to Quit 💸
+- **Description:** Most side hustles end when you stop. Forty pools built over three years sells for forty to sixty grand — after paying you the whole time. Follow for more exits.
+  #sidehustle #poolcleaning #passiveincome #businessexit #makemoney
 
 ## 6. Trash Bin Cleaning
 
