@@ -9,7 +9,7 @@ CDN base: `https://d8j0ntlcm91z4.cloudfront.net/user_3G1LVEg2Pvek3O3KgX1JEQZDwkl
 
 | Script | Block | Save as | Higgsfield file |
 |---|---|---|---|
-| 1.1 | HOOK | pw_1.1_hook.mp4 | hf_20260823_215312_a8118f2b-... .mp4 |
+| 1.1 | HOOK | pw_1.1_hook.mp4 | hf_20260823_215312_a8118f2b-2c8a-4f56-8591-59736853a022.mp4 |
 | 1.1 | PAYOFF | pw_1.1_payoff.mp4 | hf_20260823_220147_31d82761-4179-48b9-9c25-b5fdd69ceb1f.mp4 |
 | 1.2 | HOOK | pw_1.2_hook.mp4 | hf_20260824_124446_a990d73b-5640-45b5-9a51-ee09cd602b77.mp4 |
 | 1.2 | PAYOFF | pw_1.2_payoff.mp4 | hf_20260824_124450_3dbdcebc-6341-42e8-b9ed-d834f39693d3.mp4 |
