@@ -111,7 +111,7 @@ HOOK: "The startup kit for a lawn business is already in your garage. Go look." 
 PAYOFF: "Mower, trimmer, blower — five hundred dollars new, often free used. First month of customers pays for everything. Save this." (visual: tools loading into a small trailer)
 
 **UPLOAD METADATA**
-- **Title:** Your Lawn Business Is Already in Your Garage 🚜
+- **Title:** $500 Kit, Zero Debt: Your Lawn Business Is In the Garage 🚜
 - **Description:** Mower, trimmer, blower — the whole startup kit is probably already in your garage, or free secondhand. First month of customers pays for it. Save this.
   #sidehustle #lawncare #startupcost #smallbusiness #makemoney
 
@@ -120,7 +120,7 @@ HOOK: "Rookie mowers drive forty minutes between yards. Pros mow five yards on o
 PAYOFF: "Less driving, more mowing, more profit per gallon. Pitch neighbors: I'm here every Tuesday anyway — ten percent off. Follow." (visual: mower rolling directly to next-door lawn)
 
 **UPLOAD METADATA**
-- **Title:** Why Pros Mow 5 Yards on One Street 🗺️
+- **Title:** 5 Yards, 1 Street: The Route Trick Pros Use 🗺️
 - **Description:** Rookies drive forty minutes between yards; pros cluster five on one street. Less driving, more mowing, more profit per gallon. Follow for more.
   #sidehustle #lawncare #routedensity #smallbusiness #hustlemath
 
@@ -138,7 +138,7 @@ HOOK: "Twice a year, lawn money doubles. Most beginners completely miss it." (vi
 PAYOFF: "Spring and fall cleanups run two to five hundred per yard — and one-timers become weekly clients. Follow before spring hits." (visual: before/after cleanup, new recurring booking pinging)
 
 **UPLOAD METADATA**
-- **Title:** Twice a Year, Lawn Money Doubles 🍂
+- **Title:** $500 Yards, Twice a Year: The Cleanup Cash Cannon 🍂
 - **Description:** Spring and fall cleanups run two to five hundred a yard — and one-timers turn into weekly clients. Most beginners miss it. Follow before spring hits.
   #sidehustle #lawncare #falcleanup #smallbusiness #passiveincome
 
@@ -147,7 +147,7 @@ HOOK: "There's a teenager in your neighborhood making more per hour than your de
 PAYOFF: "No degree, no interview, no boss. Just straight lines and showing up weekly. The bar is that low. Follow for more." (visual: perfect striped lawn reveal)
 
 **UPLOAD METADATA**
-- **Title:** This Teenager Out-Earns Your Dentist 🤯
+- **Title:** This TEENAGER Out-Earns Your Dentist 🤯
 - **Description:** There's a kid in your neighborhood making more per hour than a dentist — with a mower. No degree, no boss, just straight lines and showing up. Follow for more.
   #sidehustle #lawncare #lawnmowing #makemoney #teenhustle
 
@@ -156,7 +156,7 @@ HOOK: "Solo mowing caps at thirty yards a week. Here's the moment it becomes a b
 PAYOFF: "Hire one helper, capacity doubles, every mow still profits. That's owner math, not worker math. Save this for later." (visual: schedule board doubling, owner checking phone)
 
 **UPLOAD METADATA**
-- **Title:** The Moment Mowing Becomes a Business 📈
+- **Title:** Hire 1 Helper, Double Your Mowing Money 📈
 - **Description:** Solo mowing caps around thirty yards a week. Hire one helper and capacity doubles while every mow still profits. That's owner math. Save this.
   #sidehustle #lawncare #smallbusiness #scaling #makemoney
 
@@ -165,7 +165,7 @@ HOOK: "What do lawn guys do in winter? The smart ones make MORE money. Here's ho
 PAYOFF: "Snow removal, gutter clearing, holiday lights — same customers, same truck. Winter contracts can match a whole summer. Follow." (visual: snow clearing driveway, lights going up on roofline)
 
 **UPLOAD METADATA**
-- **Title:** What Lawn Guys Really Do in Winter ❄️
+- **Title:** What Lawn Guys ACTUALLY Do in Winter ❄️
 - **Description:** The smart ones make MORE money: snow removal, gutter clearing, holiday lights — same customers, same truck. Winter can match a whole summer. Follow.
   #sidehustle #lawncare #winterhustle #snowremoval #smallbusiness
 
@@ -174,7 +174,7 @@ HOOK: "The number one mistake new lawn businesses make? Pricing by guilt instead
 PAYOFF: "Charge for the drive, the trim, the blow-off, the insurance — not just the mow. Underpricing kills more mowers than drought. Follow." (visual: proper quote sheet, confident handshake)
 
 **UPLOAD METADATA**
-- **Title:** The Pricing Mistake That Kills Lawn Businesses ⚠️
+- **Title:** The #1 Pricing Mistake That Kills Lawn Businesses ⚠️
 - **Description:** The number one beginner mistake: pricing by guilt instead of math. Charge for the drive, the trim, the blow-off, the insurance — not just the mow. Follow.
   #sidehustle #lawncare #pricing #smallbusiness #beginnermistakes
 
@@ -183,7 +183,7 @@ HOOK: "Everyone's chasing crypto while the most reliable money in America grows 
 PAYOFF: "Eighty million backyards, demand that literally grows, zero volatility. Boring wins. Would you mow for twenty grand a season? Comment." (visual: mower stripe finishing, cash counter settling)
 
 **UPLOAD METADATA**
-- **Title:** Grass vs. Crypto: Which Actually Pays? 📈
+- **Title:** Would You Mow for $20,000 a Season? 📈
 - **Description:** Everyone chases crypto while the most reliable money in America grows a quarter inch a day. Eighty million backyards, zero volatility. Would you mow for twenty grand a season? Comment.
   #sidehustle #lawncare #passiveincome #makemoney #crypto
 
